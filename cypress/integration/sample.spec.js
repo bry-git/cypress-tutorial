@@ -1,13 +1,19 @@
 describe('sample integration test', () => {
-    it('always returns true', () => {
+    xit('always returns true', () => {
         return true
     })
-    it('visit cypress.com', () => {
+    xit('visit cypress.com', () => {
         cy.visit('https://example.cypress.io')
         cy.contains('type').click()
 
         cy.url('includes', 'commands/actions')
 
         cy.get('.action-email').type('fake@email.com').should('have.value', 'fake@email.com')
+    })
+    it('searches for platform one from google.com', () => {
+        cy.visit('https://google.com')
+        cy.get('.gLFyf').type('platform one{enter}')
+
+        cy.findAllByText(/https:\/\/software.af.mil/).should('exist')
     })
 })
