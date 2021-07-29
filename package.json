@@ -1,0 +1,24 @@
+{
+  "name": "cypress-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "node_modules/.bin/cypress open e2e/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bry-git/cypress-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bry-git/cypress-tutorial/issues"
+  },
+  "homepage": "https://github.com/bry-git/cypress-tutorial#readme",
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.0",
+    "cypress": "^8.0.0"
+  }
+}
